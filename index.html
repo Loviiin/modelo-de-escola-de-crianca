@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Evergreen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo da Escola Evergreen">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" id="conheca-link">Conheça nossa escola</a>
+                    <div id="conheca-buttons" class="hidden">
+                        <button onclick="location.href='cardapio.html'">Cardapio</button>
+                        <button onclick="location.href='pagina2.html'">Nossa história</button>
+                        <button onclick="location.href='pagina3.html'">Colaboradores</button>
+                    </div>
+                </li>
+                <li><a href="#">Nossas atividades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        </section class = 'foto'>
+        <div class="imagem-escola">
+            <img src="escola.png" alt="Imagem da Escola Evergreen">
+        </div>
+        </section>
+
+        <section class="hero">
+            <div class="texto-bem-vindo">
+                <h1>Seja bem-vindo à escola dos
+                    seus sonhos! Tudo o que você busca em desenvolvimento para crianças de 0 à 8 anos de idade você encontra aqui.
+                </h1>
+                <h2>
+                    <img src="balao.png" alt="Balão de Fala">
+                </h2>
+
+                <h3>
+                    <img src="roda.png" alt="Roda de Amigos">
+                </h3>
+            </div>
+        </section>
+
+        <section class= "sobre">
+            <div class="triangles"></div>
+                <div class = "texto-sobre">
+                    <h1>Convidamos você a conhecer a atmosfera efervescente da Escola Evergreen, onde nossos alunos recebem um ensino de excelência e iniciam a jornada de aprender sobre o mundo e sobre eles mesmos. Contamos com equipe apaixonada por educação, que tem a missão de tornar a escola um lugar seguro e acolhedor para cada criança. Temos orgulho de ser uma escola brasileira, bilíngue e de oferecer uma educação internacional premium, com excelência acadêmica comprovada. Com a entrada no Inspired Group, desenvolvemos um novo padrão em educação global internacional, que tem o objetivo de preparar os alunos para que se tornem cidadãos globais, empáticos, confiantes e prontos para prosperar em um mundo em constante mudança.</h1>
+                    
+        </section>
+
+
+
+       
+    </main>
+
+    <script>
+        document.getElementById('conheca-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var buttons = document.getElementById('conheca-buttons');
+            if (buttons.classList.contains('hidden')) {
+                buttons.classList.remove('hidden');
+            } else {
+                buttons.classList.add('hidden');
+            }
+        });
+    </script>
+    <footer>
+
+        <p>Telefone: (69) 4002-8922</p>
+        <p>© Todos os direitos reservados a nós mesmos.</p>
+    </footer>
+</body>
+</html>

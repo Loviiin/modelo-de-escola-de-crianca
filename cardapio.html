@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Escola Evergreen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylecardapio.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo da Escola Evergreen">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" id="conheca-link">Conheça nossa escola</a>
+                    <div id="conheca-buttons" class="hidden">
+                        <button onclick="location.href='cardapio.html'">Cardápio</button>
+                        <button onclick="location.href='pagina2.html'">Página 2</button>
+                        <button onclick="location.href='pagina3.html'">Página 3</button>
+                    </div>
+                </li>
+                <li><a href="#">Nossas atividades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h33>Cardápio de Alimentação Escolar Educação Infantil Escola Evergreen</h33>
+    </div>
+
+
+    
+
+    <main>
+        <div class="semana">
+            <div class="linha">
+                <div class="dia">
+                    <h2>Segunda-feira</h2>
+                    <p><strong>Café da manhã:</strong> Mingau de Maisena e aveia com frutas diversas</p>
+                    <p><strong>Almoço:</strong> Sopa de carne com macarrão e legumes</p>
+                    <p><strong>Lanche da tarde:</strong> Frutas diversas e sanduíche natural</p>
+                </div>
+                <div class="dia">
+                    <h2>Terça-feira</h2>
+                    <p><strong>Café da manhã:</strong> Bolo de cenoura com cobertura de chocolate</p>
+                    <p><strong>Almoço:</strong> Arroz, feijão, fritas, bife acebolado e salada</p>
+                    <p><strong>Lanche da tarde:</strong> Frutas diversas</p>
+                </div>
+                <div class="dia">
+                    <h2>Quarta-feira</h2>
+                    <p><strong>Café da manhã:</strong> Leite achocolatado e biscoito de maisena</p>
+                    <p><strong>Almoço:</strong> Galinhada com legumes e salada</p>
+                    <p><strong>Lanche da tarde:</strong> Frutas diversas e tapioca</p>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="dia">
+                    <h2>Quinta-feira</h2>
+                    <p><strong>Café da manhã:</strong> Pão de sal com queijo e suco</p>
+                    <p><strong>Almoço:</strong> Torta de legumes e ovos</p>
+                    <p><strong>Lanche da tarde:</strong> Frutas diversas e cuscuz com carne seca</p>
+                </div>
+                <div class="dia">
+                    <h2>Sexta-feira</h2>
+                    <p><strong>Café da manhã:</strong> Salada de frutas</p>
+                    <p><strong>Almoço:</strong> Arroz, feijão, legumes e coxa de frango assada</p>
+                    <p><strong>Lanche da tarde:</strong> Frutas diversas e pão de queijo</p>
+                </div>
+            </div>
+        </div>
+        <div class="texto-sobre">
+            <h1>Menu inteiramente preparado por profissionais da área de nutrição infantil para garantir o melhor aproveitamento da criança nas atividades propostas pela escola. A Escola Evergreen se preocupa muito com a saúde e bem-estar de seus alunos por isso utilizamos apenas de produtos sem agrotóxicos e priorizamos a compra de insumos de produtores locais.</h1>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('conheca-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var buttons = document.getElementById('conheca-buttons');
+            if (buttons.classList.contains('hidden')) {
+                buttons.classList.remove('hidden');
+            } else {
+                buttons.classList.add('hidden');
+            }
+        });
+    </script>
+    <footer>
+        <p>Escola Evergreen se preocupa muito com a saúde e bem-estar de seus alunos, por isso utilizamos apenas de produtos sem agrotóxicos e priorizamos a compra de insumos de produtores locais.</p>
+        <p>9 4002-8922</p>
+        <p>© Todos os direitos reservados a nós mesmos</p>
+    </footer>
+</body>
+</html>
