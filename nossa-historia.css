@@ -1,0 +1,151 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Madimi One', sans-serif;
+    font-style: bold;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #71FF71;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+#conheca-buttons, #contato-buttons {
+    margin-top: 10px;
+}
+
+#conheca-buttons button, #contato-buttons button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #71FF71;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Madimi One', sans-serif;
+    font-size: 16px;
+    color: #000;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #B388EB;
+}
+
+#conheca-buttons button:hover, #contato-buttons button:hover {
+    background-color: #5ec65e;
+    transform: scale(1.05);
+}
+
+/* Seção de nossa história */
+.nossa-historia {
+    text-align: center;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #7f00ff, #00ff7f);
+}
+
+.nossa-historia h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Madimi One', sans-serif;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Adiciona esta linha para empilhar os elementos verticalmente */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o texto */
+    
+}
+
+.nossa-historia p {
+    font-size: 30px;
+    margin-bottom: 10px; /* Ajusta a margem inferior para aproximar as linhas */
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px;
+    margin: 50px;
+    
+}
+
+/* Rodapé */
+footer {
+    background-color: #71FF71;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Madimi One', sans-serif;
+    font-style: bold;
+    color: #000;
+}
+
+.imagemdahistoria {
+    border: 100px solid #71FF71; /* Define uma borda de 5px com a cor #FF5733 */
+    border-radius: 30px; /* Adiciona cantos arredondados à borda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra à imagem */
+}
+
+
+#conheca-buttons, #contato-buttons, #atividades-buttons {
+    margin-top: 10px;
+}
+
+#conheca-buttons button, #contato-buttons button, #atividades-buttons button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #71FF71;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Madimi One', sans-serif;
+    font-size: 16px;
+    color: #000;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #B388EB;
+}
+
+#conheca-buttons button:hover, #contato-buttons button:hover, #atividades-buttons button:hover {
+    background-color: #5ec65e;
+    transform: scale(1.05);
+}

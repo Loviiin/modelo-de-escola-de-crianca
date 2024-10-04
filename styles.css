@@ -78,7 +78,7 @@ header nav ul li a {
 
 .texto-bem-vindo h2 {
     position: absolute; /* Adiciona posição absoluta ao h2 */
-    top: 0; /* Ajuste a posição conforme necessário */
+    top: -30px; /* Ajuste a posição conforme necessário */
     right: -200px; /* Ajuste a posição conforme necessário */
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@ header nav ul li a {
 }
 
 .texto-bem-vindo h3 img {
-    width: 150px; 
+    width: 250px; 
     height: auto; 
 }
 
@@ -179,4 +179,54 @@ footer p {
 #conheca-buttons button:hover {
     background-color: #5ec65e;
     transform: scale(1.05); /* Adiciona um leve aumento ao passar o mouse */
+}
+
+
+#contato-buttons {
+    margin-top: 10px;
+}
+
+#contato-buttons button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #71FF71;
+    border: 2px solid #000; /* Adiciona uma borda para combinar com o estilo geral */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    cursor: pointer;
+    font-family: 'Madimi One', sans-serif;
+    font-size: 16px;
+    color: #000; /* Garante que o texto seja preto */
+    transition: background-color 0.3s, transform 0.3s; /* Adiciona transições suaves */
+    background-color: #B388EB;
+}
+
+#contato-buttons button:hover {
+    background-color: #5ec65e;
+    transform: scale(1.05); /* Adiciona um leve aumento ao passar o mouse */
+}
+
+
+#conheca-buttons, #contato-buttons, #atividades-buttons {
+    margin-top: 10px;
+}
+
+#conheca-buttons button, #contato-buttons button, #atividades-buttons button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #71FF71;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Madimi One', sans-serif;
+    font-size: 16px;
+    color: #000;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #B388EB;
+}
+
+#conheca-buttons button:hover, #contato-buttons button:hover, #atividades-buttons button:hover {
+    background-color: #5ec65e;
+    transform: scale(1.05);
 }

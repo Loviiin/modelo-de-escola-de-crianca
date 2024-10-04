@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio - Escola Evergreen</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylecardapio.css">
 </head>
 <body>
@@ -20,13 +21,22 @@
                 <li>
                     <a href="#" id="conheca-link">Conheça nossa escola</a>
                     <div id="conheca-buttons" class="hidden">
-                        <button onclick="location.href='cardapio.html'">Cardápio</button>
-                        <button onclick="location.href='pagina2.html'">Página 2</button>
-                        <button onclick="location.href='pagina3.html'">Página 3</button>
+                        <button onclick="location.href='cardapio.html'">Cardapio</button>
+                        <button onclick="location.href='nossa-historia.html'">Nossa história</button>
+                        <button onclick="location.href='colaboradores.html'">Colaboradores</button>
                     </div>
                 </li>
-                <li><a href="#">Nossas atividades</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a href="#" id = atividades-link>Nossas atividades</a>
+                    <div id="atividades-buttons" class="hidden">
+                        <button onclick="location.href='esportes.html'">Esportes</button>
+                        <button onclick="location.href='projetos.html'">projetos</button>
+                <li>
+                    <a href = "#" id =contato-link>Contato</a>
+                    <div id="contato-buttons" class="hidden">
+                        <button onclick="location.href='contato.html'">Fale Conosco</button>
+                        <button onclick="location.href='matriculas.html'">matrícula</button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -90,6 +100,27 @@
                 buttons.classList.add('hidden');
             }
         });
+
+        document.getElementById('contato-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        var buttons = document.getElementById('contato-buttons');
+        if (buttons.classList.contains('hidden')) {
+            buttons.classList.remove('hidden');
+        } else {
+            buttons.classList.add('hidden');
+        }
+    });
+
+    document.getElementById('atividades-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        var buttons = document.getElementById('atividades-buttons');
+        if (buttons.classList.contains('hidden')) {
+            buttons.classList.remove('hidden');
+        } else {
+            buttons.classList.add('hidden');
+        }
+    });
+
     </script>
     <footer>
         <p>Escola Evergreen se preocupa muito com a saúde e bem-estar de seus alunos, por isso utilizamos apenas de produtos sem agrotóxicos e priorizamos a compra de insumos de produtores locais.</p>

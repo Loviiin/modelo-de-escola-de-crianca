@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="contato.css">
-    
+    <title>Colaboradores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="colaboradores.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -29,45 +29,25 @@
                     <a href="#" id = atividades-link>Nossas atividades</a>
                     <div id="atividades-buttons" class="hidden">
                         <button onclick="location.href='esportes.html'">Esportes</button>
-                        <button onclick="location.href='projetos.html'">projetos</button>
+                        <button onclick="location.href='musica.html'">projetos</button>
                 <li>
                     <a href = "#" id =contato-link>Contato</a>
                     <div id="contato-buttons" class="hidden">
                         <button onclick="location.href='contato.html'">Fale Conosco</button>
-                        <button onclick="location.href='matriculas.html'">matrícula</button>
+                        <button onclick="location.href='pagina2.html'">matrícula</button>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="faleconoscofoto">
-        <img src="faleconosco.png" alt="Fale Conosco">
-    </div>
-    <div class="frame3">
-        <div class="fale-conosco-text">FALE CONOSCO</div>
-    </div>
 
-    <div class="container">
-        <div class="form-section">
-            <h1>Entre em contato que nós iremos responder assim que der!!!</h1>
-            <form>
-                <input type="text" placeholder="Digite seu nome completo">
-                <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="Número de telefone">
-                <input type="text" placeholder="Número do cartão de crédito">
-                <textarea placeholder="Dúvida ou sugestão??? Seu arrombado"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <p><strong>Telefone da Creche:</strong><br>9-40028922</p>
-            <p><strong>Fale conosco pelo email:</strong><br>Evergreen@school.com</p>
-            <div class="social-media">
-                <p><strong>Siga-nos:</strong></p>
-                <p>@Evergreenday</p>
-                <p>WhatsApp: 61 99619-3663</p>
-            </div>
-        </div>
-    </div>
+    <main>
+        <section class="colaboradores">
+            <h1>Nossos Colaboradores</h1>
+            <p>Informações sobre os colaboradores da Escola Evergreen.</p>
+            <!-- Adicione mais conteúdo sobre os colaboradores aqui -->
+        </section>
+    </main>
+
     <script>
         document.getElementById('conheca-link').addEventListener('click', function(event) {
             event.preventDefault();
@@ -98,7 +78,6 @@
             buttons.classList.add('hidden');
         }
     });
-
     </script>
     <footer>
         <p>Telefone: (69) 4002-8922</p>

@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Nossa História</title>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nossa-historia.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contato.css">
-    
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -39,35 +41,20 @@
             </ul>
         </nav>
     </header>
-    <div class="faleconoscofoto">
-        <img src="faleconosco.png" alt="Fale Conosco">
-    </div>
-    <div class="frame3">
-        <div class="fale-conosco-text">FALE CONOSCO</div>
-    </div>
 
-    <div class="container">
-        <div class="form-section">
-            <h1>Entre em contato que nós iremos responder assim que der!!!</h1>
-            <form>
-                <input type="text" placeholder="Digite seu nome completo">
-                <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="Número de telefone">
-                <input type="text" placeholder="Número do cartão de crédito">
-                <textarea placeholder="Dúvida ou sugestão??? Seu arrombado"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <p><strong>Telefone da Creche:</strong><br>9-40028922</p>
-            <p><strong>Fale conosco pelo email:</strong><br>Evergreen@school.com</p>
-            <div class="social-media">
-                <p><strong>Siga-nos:</strong></p>
-                <p>@Evergreenday</p>
-                <p>WhatsApp: 61 99619-3663</p>
+    <main>
+        <section class="nossa-historia">
+            <h1>Nossa História</h1>
+            <p>Fundada em 1920, a Escola Evergreen nasceu com o propósito de oferecer uma educação de excelência, adaptada às necessidades de cada geração. Ao longo de mais de um século, atravessamos diversas transformações sociais e tecnológicas, mantendo sempre o nosso compromisso com o desenvolvimento integral dos nossos alunos.
+            </p>
+            <div class = "fotohistoria">
+                <img src="fotohistoria.png" alt="Foto História" class ="imagemdahistoria">
             </div>
-        </div>
-    </div>
+
+            <p>Hoje, a Evergreen é referência na educação infantil, proporcionando um ambiente acolhedor, seguro e estimulante, onde as crianças podem explorar sua criatividade, desenvolver suas habilidades sociais e cognitivas, e cultivar o amor pelo aprendizado. Continuamos a honrar nosso legado, preparando as gerações mais jovens para os desafios do futuro com carinho, inovação e respeito ao ritmo de cada criança.
+        </section>
+    </main>
+
     <script>
         document.getElementById('conheca-link').addEventListener('click', function(event) {
             event.preventDefault();
@@ -98,7 +85,6 @@
             buttons.classList.add('hidden');
         }
     });
-
     </script>
     <footer>
         <p>Telefone: (69) 4002-8922</p>

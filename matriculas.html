@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="contato.css">
-    
+    <title>Matrículas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="matriculas.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -39,35 +40,26 @@
             </ul>
         </nav>
     </header>
-    <div class="faleconoscofoto">
-        <img src="faleconosco.png" alt="Fale Conosco">
-    </div>
-    <div class="frame3">
-        <div class="fale-conosco-text">FALE CONOSCO</div>
-    </div>
-
-    <div class="container">
-        <div class="form-section">
-            <h1>Entre em contato que nós iremos responder assim que der!!!</h1>
-            <form>
-                <input type="text" placeholder="Digite seu nome completo">
-                <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="Número de telefone">
-                <input type="text" placeholder="Número do cartão de crédito">
-                <textarea placeholder="Dúvida ou sugestão??? Seu arrombado"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <p><strong>Telefone da Creche:</strong><br>9-40028922</p>
-            <p><strong>Fale conosco pelo email:</strong><br>Evergreen@school.com</p>
-            <div class="social-media">
-                <p><strong>Siga-nos:</strong></p>
-                <p>@Evergreenday</p>
-                <p>WhatsApp: 61 99619-3663</p>
+    <main>
+        <section class="matriculas">
+            <h1>Matrículas</h1>
+            <h2>Matrículas abertas</h2>
+            <div class="pacote">
+                <h2>Pacote de Educação e Movimento</h2>
+                <textarea rows="7" cols="70" readonly>   Esse é o pacote perfeito para quem quer ver a criançada se movimentando! No Pacote Educação e Movimento, além do ensino completo, oferecemos futsal, judô, natação, ballet e basquete. Tudo isso com café da manhã, almoço e ainda um reforço no café da tarde. As crianças saem bem nutridas e cheias de energia para os esportes e estudos!</textarea>
             </div>
-        </div>
-    </div>
+            <div class="pacote">
+                <h2>Pacote Aprendiz</h2>
+                <textarea rows="7" cols="70" readonly>   O Pacote Aprendiz é voltado para o período da manhã, oferecendo a mesma qualidade de ensino, porém sem as atividades esportivas. Inclui café da manhã e almoço, proporcionando uma educação  completa durante a manhã, com as tardes livres para outras atividades fora da escola. Ideal para famílias que buscam uma carga horária menor</textarea>
+            </div>
+
+
+            <div class = "botãomatricula">
+                <button onclick="location.href='matriculas2.html'">Faça sua matrícula</button>
+            </div>
+        </section>
+    </main>
+
     <script>
         document.getElementById('conheca-link').addEventListener('click', function(event) {
             event.preventDefault();
@@ -80,16 +72,16 @@
         });
 
         document.getElementById('contato-link').addEventListener('click', function(event) {
-        event.preventDefault();
-        var buttons = document.getElementById('contato-buttons');
-        if (buttons.classList.contains('hidden')) {
-            buttons.classList.remove('hidden');
-        } else {
-            buttons.classList.add('hidden');
-        }
-    });
+            event.preventDefault();
+            var buttons = document.getElementById('contato-buttons');
+            if (buttons.classList.contains('hidden')) {
+                buttons.classList.remove('hidden');
+            } else {
+                buttons.classList.add('hidden');
+            }
+        });
 
-    document.getElementById('atividades-link').addEventListener('click', function(event) {
+        document.getElementById('atividades-link').addEventListener('click', function(event) {
         event.preventDefault();
         var buttons = document.getElementById('atividades-buttons');
         if (buttons.classList.contains('hidden')) {
@@ -98,7 +90,6 @@
             buttons.classList.add('hidden');
         }
     });
-
     </script>
     <footer>
         <p>Telefone: (69) 4002-8922</p>

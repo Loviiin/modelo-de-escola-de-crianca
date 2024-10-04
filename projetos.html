@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola Evergreen</title>
+    <title>Projetos - Escola Evergreen</title>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="matriculas.css">
+    <link rel="stylesheet" href="projetos.css">
+
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <a href="index.html">
@@ -41,37 +43,18 @@
     </header>
 
     <main>
-        </section class = 'foto'>
-        <div class="imagem-escola">
-            <img src="escola.png" alt="Imagem da Escola Evergreen">
-        </div>
-        </section>
-
-        <section class="hero">
-            <div class="texto-bem-vindo">
-                <h1>Seja bem-vindo à escola dos
-                    seus sonhos! Tudo o que você busca em desenvolvimento para crianças de 0 à 8 anos de idade você encontra aqui.
-                </h1>
-                <h2>
-                    <img src="balao.png" alt="Balão de Fala">
-                </h2>
-
-                <h3>
-                    <img src="roda.png" alt="Roda de Amigos">
-                </h3>
+        <section class="projetos">
+            <h1>Projetos</h1>
+            <h2>Projetos em andamento</h2>
+            <div class="pacote">
+                <h2>Projeto “Pequeno Empreendedor"</h2>
+                <textarea rows="7" cols="70" readonly>      Esse projeto incentiva as crianças a desenvolverem habilidades empreendedoras desde cedo. Elas poderão criar pequenos negócios fictícios, como uma barraca de limonada, loja de artesanatos ou até uma mini-padaria. Durante o processo, aprenderão sobre finanças, trabalho em equipe e criatividade. Ao final, a escola pode organizar uma "Feira do Empreendedor", onde os alunos apresentam suas ideias para a comunidade escolar.</textarea>
+            </div>
+            <div class="pacote">
+                <h2>Projeto “Festival das Culturas”</h2>
+                <textarea rows="7" cols="70" readonly>   O Festival das Culturas promove a diversidade e a inclusão, incentivando os alunos a explorar diferentes culturas do mundo. Cada turma ou grupo pode escolher um país ou uma cultura para apresentar. Eles poderão criar apresentações sobre a história, a comida e cultura desse lugares. Esse projeto ajuda a desenvolver o respeito pelas diferenças e promove a curiosidade sobre o mundo.</textarea>
             </div>
         </section>
-
-        <section class= "sobre">
-            <div class="triangles"></div>
-                <div class = "texto-sobre">
-                    <h1>Convidamos você a conhecer a atmosfera efervescente da Escola Evergreen, onde nossos alunos recebem um ensino de excelência e iniciam a jornada de aprender sobre o mundo e sobre eles mesmos. Contamos com equipe apaixonada por educação, que tem a missão de tornar a escola um lugar seguro e acolhedor para cada criança. Temos orgulho de ser uma escola brasileira, bilíngue e de oferecer uma educação internacional premium, com excelência acadêmica comprovada. Com a entrada no Inspired Group, desenvolvemos um novo padrão em educação global internacional, que tem o objetivo de preparar os alunos para que se tornem cidadãos globais, empáticos, confiantes e prontos para prosperar em um mundo em constante mudança.</h1>
-                    
-        </section>
-
-
-
-       
     </main>
 
     <script>
@@ -84,30 +67,26 @@
                 buttons.classList.add('hidden');
             }
         });
-
         document.getElementById('contato-link').addEventListener('click', function(event) {
-        event.preventDefault();
-        var buttons = document.getElementById('contato-buttons');
-        if (buttons.classList.contains('hidden')) {
-            buttons.classList.remove('hidden');
-        } else {
-            buttons.classList.add('hidden');
-        }
-    });
-
-    document.getElementById('atividades-link').addEventListener('click', function(event) {
-        event.preventDefault();
-        var buttons = document.getElementById('atividades-buttons');
-        if (buttons.classList.contains('hidden')) {
-            buttons.classList.remove('hidden');
-        } else {
-            buttons.classList.add('hidden');
-        }
-    });
-
+            event.preventDefault();
+            var buttons = document.getElementById('contato-buttons');
+            if (buttons.classList.contains('hidden')) {
+                buttons.classList.remove('hidden');
+            } else {
+                buttons.classList.add('hidden');
+            }
+        });
+        document.getElementById('atividades-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var buttons = document.getElementById('atividades-buttons');
+            if (buttons.classList.contains('hidden')) {
+                buttons.classList.remove('hidden');
+            } else {
+                buttons.classList.add('hidden');
+            }
+        });
     </script>
     <footer>
-
         <p>Telefone: (69) 4002-8922</p>
         <p>© Todos os direitos reservados a nós mesmos.</p>
     </footer>

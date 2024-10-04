@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="contato.css">
-    
+    <title>Esportes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="esportes.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -39,35 +40,21 @@
             </ul>
         </nav>
     </header>
-    <div class="faleconoscofoto">
-        <img src="faleconosco.png" alt="Fale Conosco">
-    </div>
-    <div class="frame3">
-        <div class="fale-conosco-text">FALE CONOSCO</div>
-    </div>
 
-    <div class="container">
-        <div class="form-section">
-            <h1>Entre em contato que nós iremos responder assim que der!!!</h1>
-            <form>
-                <input type="text" placeholder="Digite seu nome completo">
-                <input type="email" placeholder="E-mail">
-                <input type="tel" placeholder="Número de telefone">
-                <input type="text" placeholder="Número do cartão de crédito">
-                <textarea placeholder="Dúvida ou sugestão??? Seu arrombado"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <p><strong>Telefone da Creche:</strong><br>9-40028922</p>
-            <p><strong>Fale conosco pelo email:</strong><br>Evergreen@school.com</p>
-            <div class="social-media">
-                <p><strong>Siga-nos:</strong></p>
-                <p>@Evergreenday</p>
-                <p>WhatsApp: 61 99619-3663</p>
+    <main>
+        <section class="esportes">
+            <h1>Esportes</h1>
+            <p>     Na Escola Evergreen, acreditamos que o esporte é uma parte essencial do desenvolvimento físico, emocional e social das crianças. Por isso, oferecemos uma variedade de modalidades esportivas que ajudam na disciplina, o trabalho em equipe e a autoconfiança desde cedo.
+                Com profissionais qualificados e um ambiente seguro e acolhedor, nossos alunos aprendem muito mais do que técnicas esportivas.</p>
+            <div class="grid-fotos">
+                <img src="fotoesporte1.png" alt="Foto 1" class="foto-esporte">
+                <img src="fotoesporte2.png" alt="Foto 2" class="foto-esporte">
+                <img src="esporte33.png" alt="Foto 3" class="foto-esporte">
+                <img src="esporte44.png" alt="Foto 4" class="foto-esporte">
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
     <script>
         document.getElementById('conheca-link').addEventListener('click', function(event) {
             event.preventDefault();
@@ -80,16 +67,16 @@
         });
 
         document.getElementById('contato-link').addEventListener('click', function(event) {
-        event.preventDefault();
-        var buttons = document.getElementById('contato-buttons');
-        if (buttons.classList.contains('hidden')) {
-            buttons.classList.remove('hidden');
-        } else {
-            buttons.classList.add('hidden');
-        }
-    });
+            event.preventDefault();
+            var buttons = document.getElementById('contato-buttons');
+            if (buttons.classList.contains('hidden')) {
+                buttons.classList.remove('hidden');
+            } else {
+                buttons.classList.add('hidden');
+            }
+        });
 
-    document.getElementById('atividades-link').addEventListener('click', function(event) {
+        document.getElementById('atividades-link').addEventListener('click', function(event) {
         event.preventDefault();
         var buttons = document.getElementById('atividades-buttons');
         if (buttons.classList.contains('hidden')) {
@@ -98,7 +85,6 @@
             buttons.classList.add('hidden');
         }
     });
-
     </script>
     <footer>
         <p>Telefone: (69) 4002-8922</p>
